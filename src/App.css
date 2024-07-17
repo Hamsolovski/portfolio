@@ -3,3 +3,61 @@ section, article, footer {
   padding: 10px;
   border: 0.5px solid black;
 }
+
+@media (width >= 600px) {
+
+  main {
+    height: 85vh;
+  }
+
+  .portfolio__main_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .portfolio__id {
+    overflow-y: auto;
+  }
+
+  .portfolio__projects {
+    overflow-y: auto;
+  }
+
+  .portfolio__projects_grid {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    article:nth-child(4n+1) {
+        /* background-color: red ; */
+        grid-column-start: 1;
+        grid-column-end: 11;
+      };
+    article:nth-child(4n+2) {
+        /* background-color: blue ; */
+        grid-column-start: 11;
+        grid-column-end: 20;
+      };
+    article:nth-child(4n+3) {
+        /* background-color: green ; */
+        grid-column-start: 1;
+        grid-column-end: 9;
+      };
+    article:nth-child(4n+0) {
+        /* background-color: yellow ; */
+        grid-column-start: 9;
+        grid-column-end: 20;
+      };
+    }
+  }
+
+  .portfolio__contact {
+    max-height: 7vh;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      gap: 20px;
+    } 
+  }
