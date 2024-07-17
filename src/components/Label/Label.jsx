@@ -1,7 +1,9 @@
+import './label.css'
+
 function Label () {
-    
+
     return (
-        <section><p>Javascript</p></section>
+        <section className='label'>Javascript</section>
     )
 }
 

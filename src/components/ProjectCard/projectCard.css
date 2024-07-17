@@ -1,0 +1,15 @@
+.project-card {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px var(--main-color);
+}
+
+.project-card__time {
+    font-size: 0.8em;
+    color: var(--main-color);
+}
+
+.project-card__desc {
+    margin: 10px 0;
+    letter-spacing: -1px;
+}
