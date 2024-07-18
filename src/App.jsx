@@ -1,7 +1,7 @@
 import "./App.css";
 
-import Label from "./components/Label/Label";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
+import SkillList from "./components/SkillList/SkillList.jsx";
+import ProjectList from "./components/ProjectList/ProjectList.jsx";
 
 function App() {
   return (
@@ -31,60 +31,21 @@ function App() {
         </section>
         <section className="portfolio__skills">
           <h2>Mes compétences</h2>
-          <h3>Langages</h3>
-          <section className="portfolio__skills_display">
-            <Label />
-            <Label />
-            <Label />
-            <Label />
-          </section>
-
-          {/* Faire un map ici */}
-          <h3>Frontend</h3>
-          <section className="portfolio__skills_display">
-            <Label />
-            <Label />
-            <Label />
-            <Label />
-          </section>
-          <h3>Backend</h3>
-          <section className="portfolio__skills_display">
-            <Label />
-            <Label />
-            <Label />
-            <Label />
-          </section>
-          <h3>Outils</h3>
-          <section className="portfolio__skills_display">
-            <Label />
-            <Label />
-            <Label />
-            <Label />
-          </section>
+          <SkillList />
         </section>
       </section>
       <section className="portfolio__projects">
         <h2>Mes projets web</h2>
-        <section className="portfolio__projects_grid">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </section>
+        <ProjectList />
       </section>
       <footer className="portfolio__contact">
         <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
+          <a href="www.linkedin.com/in/ant-delalande">LinkedIn</a>
+          <a href="https://github.com/Hamsolovski/">Github</a>
         </ul>
-        <a href="mailto:hamsolovski@gmail.com">Contactez-moi</a>
+        <a className="portfolio__contact_link" href="mailto:hamsolovski@gmail.com">
+          Contactez-moi
+        </a>
       </footer>
     </main>
   );

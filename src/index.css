@@ -10,7 +10,7 @@
 :root {
   font-family: "Inter", sans-serif;
   --main-color: #590b4d;
-  --background-color: #fffef8;
+  --background-color: #f9f8ef;
   --main-font: "Inter", sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   padding: 2vh 2vw;
-  background-color: #fffef8;
+  background-color: var(--background-color);
 
   background-size: 20px 20px;
   background-image: repeating-linear-gradient(
