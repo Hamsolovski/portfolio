@@ -4,8 +4,9 @@ import Label from "../Label/Label";
 
 function ProjectCard({ project }) {
   return (
-    <article className="project-card">
+    <article className="project-card" className={project.tag}>
       <h2>{project.name}</h2>
+      <section>
       <p className="project-card__time">{project.date}</p>
       <p className="project-card__desc">{project.desc}</p>
       <footer className="portfolio__skills_display">
@@ -13,6 +14,8 @@ function ProjectCard({ project }) {
           <Label key={language} label={language} />
         ))}
       </footer>
+      </section>
+      
     </article>
   );
 }
@@ -20,10 +23,10 @@ function ProjectCard({ project }) {
 export default ProjectCard;
 
 ProjectCard.propTypes = {
-    project: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        desc: PropTypes.string.isRequired,
-        stack: PropTypes.array.isRequired
-    })
-}
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    stack: PropTypes.array.isRequired,
+  }),
+};

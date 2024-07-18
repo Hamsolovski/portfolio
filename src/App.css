@@ -1,6 +1,8 @@
 main {
   padding: 10px;
   background-color: var(--background-color);
+  background-image: url('./assets/noise.png');
+  background-size: cover;
 }
 
 article {
@@ -114,22 +116,18 @@ article {
     grid-template-rows: repeat(1, 2fr);
 
     article:nth-child(4n + 1) {
-      /* background-color: red ; */
       grid-column-start: 1;
       grid-column-end: 11;
     }
     article:nth-child(4n + 2) {
-      /* background-color: blue ; */
       grid-column-start: 11;
       grid-column-end: 20;
     }
     article:nth-child(4n + 3) {
-      /* background-color: green ; */
       grid-column-start: 1;
       grid-column-end: 9;
     }
     article:nth-child(4n + 0) {
-      /* background-color: yellow ; */
       grid-column-start: 9;
       grid-column-end: 20;
     }

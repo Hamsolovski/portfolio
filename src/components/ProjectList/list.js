@@ -6,7 +6,8 @@ const projects = [
         desc: "Projet de formation - journal ludique pour démarrer et suivre son activité sportive",
         stack: [
             "Javascript", "React", "Express.js", "MySQL"  
-        ]
+        ],
+        tag: "moov-it"
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const projects = [
         desc: "Hackathon - un site pour inciter les utilisateurs à déconnecter et découvrir des activités près de chez eux",
         stack: [
             "Javascript", "React"  
-        ]
+        ],
+        tag: "out"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const projects = [
         desc: "Projet de formation - site d’aide pour les joueurs et joueuses de D&D",
         stack: [
             "Javascript", "React" 
-        ]
+        ],
+        tag: "wizard-castle"
     },
     {
         id: 4,
@@ -34,6 +37,8 @@ const projects = [
         stack: [
             "Javascript", "HTML5", "CSS3"
         ]
+        ,
+        tag: "wild-social"
     },
 ]
 
