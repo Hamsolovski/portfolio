@@ -29,6 +29,17 @@
 
 .wild-social::before {
   background-image: url("../../assets/wild-social-opti.gif");
+  --lines: 0.0003px;
+  mask-image: repeating-radial-gradient(
+    circle at center,
+    #000,
+    var(--lines),
+    #000,
+    0, /* transition hints make code easier to manage */
+    #0000,
+    calc(var(--lines) * 2),
+    #0000 0 /* trailing 0 is part of the hard stop logic */
+  );
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -55,6 +66,17 @@
 
 .out::before {
   background-image: url("../../assets/out.png");
+  --lines: 0.0003px;
+  mask-image: repeating-radial-gradient(
+    circle at center,
+    #000,
+    var(--lines),
+    #000,
+    0, /* transition hints make code easier to manage */
+    #0000,
+    calc(var(--lines) * 2),
+    #0000 0 /* trailing 0 is part of the hard stop logic */
+  );
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -64,7 +86,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .moov-it {
@@ -81,6 +103,18 @@
 
 .moov-it::before {
   background-image: url("../../assets/moov-it.png");
+  --lines: 0.0003px;
+  mask-image: repeating-radial-gradient(
+    circle at center,
+    #000,
+    var(--lines),
+    #000,
+    0, /* transition hints make code easier to manage */
+    #0000,
+    calc(var(--lines) * 2),
+    #0000 0 /* trailing 0 is part of the hard stop logic */
+  );
+  content: "";
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -107,6 +141,17 @@
 
 .wizard-castle::before {
   background-image: url("../../assets/wizard-castle.png");
+  --lines: 0.0003px;
+  mask-image: repeating-radial-gradient(
+    circle at center,
+    #000,
+    var(--lines),
+    #000,
+    0, /* transition hints make code easier to manage */
+    #0000,
+    calc(var(--lines) * 2),
+    #0000 0 /* trailing 0 is part of the hard stop logic */
+  );
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 0;

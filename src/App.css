@@ -1,7 +1,12 @@
+
+
+
+
+
+
 main {
   padding: 10px;
   background-color: var(--background-color);
-  background-image: url('./assets/noise.png');
   background-size: cover;
 }
 

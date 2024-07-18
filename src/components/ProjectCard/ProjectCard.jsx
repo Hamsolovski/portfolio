@@ -4,7 +4,7 @@ import Label from "../Label/Label";
 
 function ProjectCard({ project }) {
   return (
-    <article className="project-card" className={project.tag}>
+    <article className={`project-card noise ${project.tag}`}>
       <h2>{project.name}</h2>
       <section>
       <p className="project-card__time">{project.date}</p>
