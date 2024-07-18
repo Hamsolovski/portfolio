@@ -36,7 +36,7 @@ const projects = [
         id: 2,
         name: "Wizard's Castle",
         date: "Avril 2024 - Projet de formation",
-        desc: "Un site d’aide pour les joueurs et joueuses de D&D",
+        desc: "Un site d’aide pour les joueurs et joueuses de Donjons & Dragons",
         stack: [
             "Javascript", "React" 
         ],

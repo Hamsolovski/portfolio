@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import PropTypes from "prop-types";
 import "./projectCard.css";
@@ -5,7 +6,13 @@ import Label from "../Label/Label";
 
 function ProjectCard({ project }) {
   return (
-    <a href={project.link} className="project-card__link">
+    <motion.a
+      href={project.link}
+      className="project-card__link"
+      initial={{ y: "500%" }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", duration: 2 }}
+    >
       <article className={`project-card noise ${project.tag}`}>
         <h2>{project.name}</h2>
         <section>
@@ -16,10 +23,12 @@ function ProjectCard({ project }) {
               <Label key={language} label={language} />
             ))}
           </footer>
-          <FaRegArrowAltCircleRight className="project-card__link-icon" />
+          <div>
+            <FaRegArrowAltCircleRight className="project-card__link-icon" />
+          </div>
         </section>
       </article>
-    </a>
+    </motion.a>
   );
 }
 

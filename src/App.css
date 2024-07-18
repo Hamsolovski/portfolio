@@ -106,20 +106,21 @@ article {
   }
 
   .portfolio__projects_grid {
+    overflow-y: auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
     display: flex;
     flex-direction: column;
+    height: 70vh
   }
 }
 
 @media (width >= 850px) {
   .portfolio__projects_grid {
-    overflow-y: auto;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    
     display: grid;
     grid-template-columns: repeat(19, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    height: 75vh;
+
 
     a:nth-child(4n + 1) {
       grid-column-start: 1;
