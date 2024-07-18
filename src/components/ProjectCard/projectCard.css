@@ -1,8 +1,15 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
+
+.project-card__link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: fit-content;
+  }
 
 .project-card__time {
   font-size: 0.8em;
@@ -13,6 +20,11 @@
   margin: 10px 0;
   letter-spacing: -1px;
   font-size: 1.2em;
+  line-height: 1;
+}
+
+.project-card__link-icon {
+    align-self: flex-end;
 }
 
 .wild-social {
@@ -24,10 +36,10 @@
   border-radius: 10px;
   border: 0.5px solid black;
   box-shadow: 0px 4px 0px 0px var(--main-color);
-  max-height: fit-content;
+  height: 80%;
 }
 
-.wild-social::before {
+.wild-social::after {
   background-image: url("../../assets/wild-social-opti.gif");
   --lines: 0.0003px;
   mask-image: repeating-radial-gradient(
@@ -62,6 +74,7 @@
   border: 0.5px solid black;
   box-shadow: 0px 4px 0px 0px var(--main-color);
   max-height: fit-content;
+  height: 80%;
 }
 
 .out::before {
@@ -98,7 +111,7 @@
   border-radius: 10px;
   border: 0.5px solid black;
   box-shadow: 0px 4px 0px 0px var(--main-color);
-  max-height: fit-content;
+  height: 80%;
 }
 
 .moov-it::before {
@@ -136,7 +149,7 @@
   border-radius: 10px;
   border: 0.5px solid black;
   box-shadow: 0px 4px 0px 0px var(--main-color);
-  max-height: fit-content;
+  height: 80%;
 }
 
 .wizard-castle::before {
@@ -163,3 +176,40 @@
   left: 0px;
   opacity: 0.1;
 }
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    border: 0.5px solid black;
+    box-shadow: 0px 4px 0px 0px var(--main-color);
+    height: 80%;
+  }
+  
+  .portfolio::before {
+    background-image: url("../../assets/portfolio.png");
+    --lines: 0.0003px;
+    mask-image: repeating-radial-gradient(
+      circle at center,
+      #000,
+      var(--lines),
+      #000,
+      0, /* transition hints make code easier to manage */
+      #0000,
+      calc(var(--lines) * 2),
+      #0000 0 /* trailing 0 is part of the hard stop logic */
+    );
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }

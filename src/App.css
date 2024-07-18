@@ -1,9 +1,4 @@
 
-
-
-
-
-
 main {
   padding: 10px;
   background-color: var(--background-color);
@@ -57,11 +52,12 @@ article {
 
 .portfolio__contact {
   background-color: var(--background-color);
+  border-top: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  margin: 20px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   height: fit-content;
   ul {
     display: flex;
@@ -81,8 +77,6 @@ article {
     font-size: 1.5em;
   }
 }
-
-
 
 @media (width >= 600px) {
   main {
@@ -112,27 +106,34 @@ article {
   }
 
   .portfolio__projects_grid {
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width >= 850px) {
+  .portfolio__projects_grid {
     overflow-y: auto;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     display: grid;
     grid-template-columns: repeat(19, 1fr);
-    grid-template-rows: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 75vh;
 
-    article:nth-child(4n + 1) {
+    a:nth-child(4n + 1) {
       grid-column-start: 1;
       grid-column-end: 11;
     }
-    article:nth-child(4n + 2) {
+    a:nth-child(4n + 2) {
       grid-column-start: 11;
       grid-column-end: 20;
     }
-    article:nth-child(4n + 3) {
+    a:nth-child(4n + 3) {
       grid-column-start: 1;
       grid-column-end: 9;
     }
-    article:nth-child(4n + 0) {
+    a:nth-child(4n + 0) {
       grid-column-start: 9;
       grid-column-end: 20;
     }
