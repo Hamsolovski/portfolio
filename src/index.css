@@ -72,7 +72,8 @@ h2 {
   letter-spacing: -2px;
   font-weight: 900;
   line-height: 1;
-  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
 }
 
 h3 {
@@ -81,7 +82,7 @@ h3 {
   letter-spacing: -2px;
   font-weight: 00;
   line-height: 1;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
 }
 
 @media (width >= 600px) {
@@ -93,6 +94,6 @@ h3 {
   
   h2 {
     font-size: 2em;
-    margin: 10px 0;
+    
   }
 }

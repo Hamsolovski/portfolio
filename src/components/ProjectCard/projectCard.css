@@ -2,7 +2,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   div {
     width: 100%;
     display: flex;
@@ -225,3 +225,10 @@
     left: 0px;
     opacity: 0.1;
   }
+
+  @media (width >= 850px) {
+    .project-card {
+      min-height: 260px;
+    }
+  }
+
