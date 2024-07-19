@@ -88,7 +88,7 @@ article {
   .portfolio__main_container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 25vh 59vh 6vh;
+    grid-template-rows: 1fr 4fr 1fr;
   }
 
   .portfolio__name {
@@ -151,5 +151,4 @@ article {
 .portfolio__contact {
   grid-column-start: 1;
   grid-column-end: 3;
-  max-height: 10vh;
 }
