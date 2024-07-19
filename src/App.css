@@ -117,6 +117,10 @@ article {
   }
 }
 
+.portfolio__credits {
+  font-size: 0.8em;
+}
+
 @media (width >= 850px) {
   .portfolio__projects_grid {
     
@@ -146,5 +150,5 @@ article {
 .portfolio__contact {
   grid-column-start: 1;
   grid-column-end: 3;
-  max-height: 7vh;
+  max-height: 10vh;
 }

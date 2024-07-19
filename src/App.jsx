@@ -46,6 +46,7 @@ function App() {
         <a className="portfolio__contact_link" href="mailto:hamsolovski@gmail.com">
           Contactez-moi
         </a>
+        <p className="portfolio__credits">Crédit : Antoine Delalande ©2024</p>
       </footer>
     </main>
   );
