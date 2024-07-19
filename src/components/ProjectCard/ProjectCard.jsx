@@ -8,6 +8,7 @@ function ProjectCard({ project }) {
   return (
     <motion.a
       href={project.link}
+      target="_blank"
       className="project-card__link"
       initial={{ y: "500%" }}
       animate={{ y: 0 }}

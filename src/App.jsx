@@ -18,7 +18,7 @@ function App() {
             Je suis un développeur web basé à Paris, en France. Après avoir
             travaillé dans la communication pour diverses associations
             environnementales pendant 8 ans, j’ai suivi une formation de
-            développeur web à la Wild Code School, Paris.
+            développeur web à la Wild Code School en 2024.
           </p>
           <p>
             Très intéressé par l’impact du numérique, j’aspire à faire du web un
@@ -40,11 +40,11 @@ function App() {
       </section>
       <footer className="portfolio__contact">
         <ul>
-          <a href="www.linkedin.com/in/ant-delalande">LinkedIn</a>
-          <a href="https://github.com/Hamsolovski/">Github</a>
+          <a href="https://www.linkedin.com/in/ant-delalande" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Hamsolovski/" target="_blank">Github</a>
         </ul>
         <a className="portfolio__contact_link" href="mailto:hamsolovski@gmail.com">
-          Contactez-moi
+          Me contacter
         </a>
         <p className="portfolio__credits">Crédit : Antoine Delalande ©2024</p>
       </footer>
