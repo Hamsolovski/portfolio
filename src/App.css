@@ -119,6 +119,7 @@ article {
 
 .portfolio__credits {
   font-size: 0.8em;
+  color: var(--main-color)
 }
 
 @media (width >= 850px) {
